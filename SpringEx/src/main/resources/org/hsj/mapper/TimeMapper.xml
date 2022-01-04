@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mybatis를 만들기위한 xml파일 생성
+	xml : html 확장판 -->
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+  <!--인터페이스 연결 -->
+   <mapper namespace="org.hsj.mapper.TimeMapper">
+     <!-- namespace=패키지명.인터페이스명 -->
+     <select id="getTime" resultType="String"> <!-- 여기서 구현 -->
+      <!--select id="메서드명"-->
+        select sysdate()
+     </select>
+  </mapper>

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* 브라우저 리셋 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#F6F5EF;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* #wrap{
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+    background-color:#F6F5EF;
+} */
+
+#header{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    margin-left: -1280px;
+    width: 2560px;
+    z-index: 100;
+    background-color:#F6F5EF;
+}
+
+.header_in{
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color : transparent;
+}
+
+.logo a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -99999999px;
+    object-fit: cover;
+}
+
+
+.pc-gnb ul{display: flex;}
+.pc-gnb li{margin-right: 40px;}
+.pc-gnb li:last-child{margin-right: 0;}
+.pc-gnb li a:hover{font-weight: 700;color: #007042;}
+.pc-gnb li a{font-size: 18px;font-weight: 500;color: #222;}
+
+.pc-util{margin-left: 100px;}
+.pc-util ul{display: flex;}
+.pc-util li{margin-right: 10px;}
+.pc-util li:last-child{margin-right: 0;}
+.pc-util li a:hover{font-weight: 700;color: #007042;}
+.pc-util li a{font-size: 15px;font-weight: 500;color: #222;}
+
+.icons ul{display: flex;}
+.icons .icon_menu a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/menu_icon.png);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999999px;
+}
+.icons .icon_search a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/search.svg);
+    background-size: 25px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -999999999px;
+}
