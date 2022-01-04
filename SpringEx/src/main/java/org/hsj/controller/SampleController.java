@@ -13,24 +13,24 @@ public class SampleController {
 	@RequestMapping(value="sample", method = RequestMethod.GET) // 웹브라우저를 분석해주는 역할
 
 	/* 화면에서 서버로 데이터를 전송하는 방식 2가지
-	 * GET : 속도는 빠르지만 보안 취약
+	 * GET : 속도는 빠르지만 보안 취약 
 	 * 문법 :
 	 * 	1) 
-	 *<form action="서버주소" method="get">
-	 * 	id : <input type="text" name="id">
-	 * 	pw : <input type="password" name="pw">
-	 * 	name : <input type="text" name="name">
-	 *</form>
+	 *	<form action="서버주소" method="get">
+	 * 		id : <input type="text" name="id">
+	 * 		pw : <input type="password" name="pw">
+	 * 		name : <input type="text" name="name">
+	 *	</form>
 	 *
 	 *  2) <a href="서버주소?id=aaa&pw=1234&name=정자바"></a>
 	 *  
 	 * POST: 속도는 느리지만 보안 보장(회원가입할 시)
 	 * 문법:
-	 * <form action="" method="post">
-	 * 	id : <input type="text" name="id">
-	 * 	pw : <input type="password" name="pw">
-	 * 	name : <input type="text" name="name">
-	 * </form>
+	 * 	<form action="" method="post">
+	 * 		id : <input type="text" name="id">
+	 * 		pw : <input type="password" name="pw">
+	 * 		name : <input type="text" name="name">
+	 * 	</form>
 	 * */
 	public void basic() {
 		logger.info("sample 실행됨.");
