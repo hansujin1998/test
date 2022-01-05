@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@include file="header.jsp" %>
-<div>회원가입</div>
-${id}${pw}${name} 
+
+${zzzz}
+
 </body>
 </html>

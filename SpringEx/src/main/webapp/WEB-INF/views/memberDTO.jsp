@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@include file="header.jsp" %>
-<div>회원가입</div>
-${id}${pw}${name} 
+memberDTO.jsp
+${id.getId()}
+${pw.getPw()}
+${name.getName()}
 </body>
 </html>
